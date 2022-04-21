@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="color: rgb(255, 251, 0)">calculator</h1>
+
+      <div class="calculator" id="calculator">
+        <input type="text" name="screen" id="screen" />
+        <p style="text-align: right" class="name">𝖕𝖗𝖎𝖓𝖈𝖊</p>
+        <table>
+          <tr>
+            <td><button class="clear" onclick="audi()">C</button></td>
+            <td><button class="op" onclick="aud()">⌫</button></td>
+            <td><button class="op" onclick="aud()">X</button></td>
+            <td><button class="op1" onclick="aud()">/</button></td>
+            <td><button class="sc" onclick="aud()">sin</button></td>
+            <td>
+              <button
+                class="sc"
+                onclick="aud()"
+                style="border-top-right-radius: 15px"
+              >
+                log
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="aud()">7</button></td>
+            <td><button onclick="aud()">8</button></td>
+            <td><button onclick="aud()">9</button></td>
+            <td><button class="op" onclick="aud()">-</button></td>
+            <td><button class="sc" onclick="aud()">cos</button></td>
+            <td><button class="sc" onclick="aud()">√</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="aud()">4</button></td>
+            <td><button onclick="aud()">5</button></td>
+            <td><button onclick="aud()">6</button></td>
+            <td rowspan="2"><button class="plus" onclick="aud()">+</button></td>
+            <td><button class="sc" onclick="aud()">tan</button></td>
+            <td><button class="sc" onclick="aud()">X!</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="aud()">1</button></td>
+            <td><button onclick="aud()">2</button></td>
+            <td><button onclick="aud()">3</button></td>
+            <td><button class="sc" onclick="aud()">𝝅</button></td>
+            <td><button class="sc" onclick="aud()">e</button></td>
+          </tr>
+          <tr>
+            <td><button class="zero" onclick="aud()">0</button></td>
+            <td><button onclick="aud()">.</button></td>
+            <td colspan="2">
+              <button class="equal" onclick="eql()">=</button>
+            </td>
+            <td><button class="sc" onclick="aud()">x2</button></td>
+            <td>
+              <a href="calcy.html"
+                ><button class="back" onclick="aud()">◀</button></a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <audio src="click.mp3" id="audy"></audio>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 23px;
+      }
+
+      table {
+        margin: auto;
+      }
+      body {
+        background: rgb(162, 152, 228);
+        background: radial-gradient(
+          circle,
+          rgba(162, 152, 228, 1) 0%,
+          rgba(0, 0, 0, 0.8463760504201681) 100%
+        );
+      }
+
+      input {
+        text-align: right;
+        padding-right: 30px;
+        border-radius: 50px;
+        border: 2px solid #130d0da2;
+        font-size: 30px;
+        height: 50px;
+        width: 450px;
+        margin-bottom: 0px;
+      }
+
+      button {
+        border-radius: 0px;
+        border-color: black;
+        color: aqua;
+        font-size: 25px;
+        background: #000000de;
+        width: 102px;
+        height: 90px;
+        margin: -3px;
+        padding: 0px;
+      }
+      button:hover {
+        border-radius: 5px;
+        cursor: grab;
+        color: rgb(30, 255, 0);
+        background-color: rgba(0, 0, 0, 0.616);
+        transition-duration: 0.6s;
+        transition-property: inherit;
+      }
+      button:active {
+        cursor: grabbing;
+        font-size: 20px;
+        height: 70px;
+        width: 80px;
+        border-radius: 10px;
+        transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+        background-color: black;
+        color: gold;
+        transition-duration: 0.1s;
+      }
+
+      .calculator {
+        border-style: double;
+        border-color: cyan;
+        background: rgb(0, 164, 255);
+        background: radial-gradient(
+          circle,
+          rgba(0, 164, 255, 0.6166841736694677) 31%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        padding: 23px;
+        border-radius: 33px;
+        display: inline-block;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .equal {
+        min-width: 10rem;
+      }
+      .equal:active {
+        color: rgb(179, 0, 255);
+        min-width: 5rem;
+      }
+      .plus {
+        min-height: 8.8rem;
+      }
+      .plus:active {
+        color: deeppink;
+        min-height: 3.8rem;
+      }
+      .name {
+        margin-right: 1vw;
+        background: -webkit-linear-gradient(
+          rgb(200, 255, 1),
+          rgb(81, 253, 167)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .name:hover {
+        margin-right: 1vw;
+        background: -webkit-linear-gradient(rgb(175, 1, 255), rgb(226, 251, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .clear:active {
+        color: red;
+      }
+      .op:active {
+        color: deeppink;
+      }
+      .op1:active {
+        color: deeppink;
+      }
+      .clear {
+        border-top-left-radius: 15px;
+      }
+
+      .zero {
+        border-bottom-left-radius: 15px;
+      }
+      .sc:active {
+        cursor: grabbing;
+        font-size: 20px;
+        height: 70px;
+        width: 80px;
+        border-radius: 10px;
+        background-color: black;
+        color: crimson;
+        transition-duration: 0.1s;
+      }
+      .back:active {
+        position: relative;
+        font-size: 30px;
+        height: 60px;
+        width: 80px;
+      }
+      .back {
+        border-bottom-right-radius: 15px;
+      }
+    </style>
+  </body>
+  <script>
+    let screen = document.getElementById("screen");
+    buttons = document.querySelectorAll("button");
+    let screenValue = "";
+    for (item of buttons) {
+      item.addEventListener("click", (e) => {
+        buttonText = e.target.innerText;
+        if (buttonText == "X") {
+          buttonText = "*";
+          screen.value = screenValue;
+        }
+
+        if (buttonText == "⌫") {
+          n = screenValue.length;
+          screenValue = screenValue.slice(0, n - 1);
+          screen.value = screenValue;
+        } else if (buttonText == "C") {
+          screenValue = "";
+          screen.value = screenValue;
+        } else if (buttonText == "=") {
+          screen.value = eval(screenValue);
+          screenValue.fontcolor("blue");
+        } else if (buttonText == "sin") {
+          screenValue = Math.sin(screenValue);
+          screen.value = screenValue;
+        } else if (buttonText == "cos") {
+          screenValue = Math.cos(screenValue);
+          screen.value = screenValue;
+        } else if (buttonText == "tan") {
+          screenValue = Math.tan(screenValue);
+          screen.value = screenValue;
+        } else if (buttonText == "log") {
+          screenValue = Math.log(screenValue);
+          screen.value = screenValue;
+        } else if (buttonText == "√") {
+          screenValue = Math.sqrt(screenValue);
+          screen.value = screenValue;
+        } else if (buttonText == "𝝅") {
+          buttonText = "3.14159265359";
+          screenValue = screenValue + buttonText;
+          screen.value = screenValue;
+        } else if (buttonText == "e") {
+          screenValue = screenValue + "2.71828183";
+          screen.value = screenValue;
+        } else if (buttonText == "x2") {
+          screenValue = screenValue * screenValue;
+          screen.value = screenValue;
+        } else if (buttonText == "X!") {
+          var x = screenValue;
+          for (i = 1; i < screenValue; i++) {
+            x = x * i;
+          }
+          screenValue = x;
+          screen.value = screenValue;
+        } else {
+          screenValue += buttonText;
+          screen.value = screenValue;
+        }
+      });
+    }
+    function aud() {
+      let audy = new Audio("water Drop.mp3");
+      audy.play();
+    }
+    function eql() {
+      let aud = new Audio("click2.wav");
+      aud.play();
+    }
+    function audi() {
+      let aud = new Audio("wd.mp3");
+      aud.play();
+    }
+  </script>
+</html>
