@@ -1,0 +1,73 @@
+.col-md-3{
+    margin: auto;
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+}
+
+
+.actiongames{
+    display: none
+}
+.education{
+    display: none;
+}
+.sports{
+    display: none;
+}
+.puzzle{
+    display: none;
+}
+.arcade{
+    display: none;
+}
+
+.col-md-3:hover img{
+    transform: scale(1.5);
+    transition-duration: 2.4s;
+    filter:contrast(1.2)
+}
+
+.footer{
+    text-decoration:none;
+    color:white;
+}
+.footer:hover{
+    font-size: 20px;
+    color: red;
+    transition-duration: 1s;
+}
+.header:hover{
+    color: red;
+}
+.dropdown-menu{
+    background-color: black;
+    border-radius: 6px;
+}
+.dropdown-item{
+    margin-top: 20px;
+    color: aliceblue;
+}
+.dropdown-item:hover{
+    color: red;
+}
+#playnow{
+    position: relative; 
+    background-color:rgba(255, 122, 122, 0.787); 
+    color: aliceblue; 
+    z-index: 1;
+    margin-left: 9vw; 
+    margin-top: 39vh; 
+    box-shadow: none;
+}
+#playnow:hover{
+    background-color: red;
+    transition-duration: 1.5s;
+}
+#playnow:active{
+    background-color: rgb(255, 0, 13);
+    transform: scale(1.5);
+}
+#profilepic:hover{
+    filter: contrast(2);
+}
