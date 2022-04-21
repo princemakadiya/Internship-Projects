@@ -1,0 +1,80 @@
+body{
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    
+}
+#signupform{
+    background-color: rgba(0, 0, 0, 0.828); 
+    padding: 20px; 
+    color: rgba(255, 255, 255, 0.815);  
+    border: 1px double rgb(255, 255, 255); 
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+    max-width:900px;
+
+}
+#signinform{
+    background-color: rgba(0, 0, 0, 0.828); 
+    padding: 20px; 
+    color: rgba(255, 255, 255, 0.815);  
+    border: 1px double rgb(255, 255, 255); 
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    align-self: center;
+    max-width:900px;
+}
+.form-control{
+    color: rgba(255, 255, 255, 0.739);
+    background-color: rgba(0, 0, 0, 0.239);
+    border-radius: 10px;
+}
+.form-control:focus{
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+}
+.btn{
+    background-color: rgb(32, 88, 243);
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.993);
+}
+.btn:active{
+    background-color:rgb(32, 88, 243) ;
+    transform: scaleX(0.9);
+    transition-duration: 1s;
+}
+#google{
+    background-color: rgba(190, 23, 23, 0.835);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: small;
+}
+#google:hover{
+    background-color:rgb(0, 0, 0);
+    color: red;
+}
+#facebook{
+    background-color: rgb(2, 112, 255);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: small;
+}
+#facebook:hover{
+    background-color: rgb(0, 0, 0);
+    color: blue;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
