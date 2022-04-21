@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <p class="heading" style="margin-bottom: 0px">Agri Web</p>
+  <br />
+  <br />
+  <link rel="stylesheet" href="signin.css" />
+</head>
+<title>Agriculture Website | Signin</title>
+<body>
+  <div class="box">
+    <form>
+      <br />
+      <div class="homii" style="color: rgb(229, 255, 0)">
+        Go to home page without signin.
+        <a href="home.html" class="homepage" style="color: rgb(255, 255, 255)"
+          >Home</a
+        >
+      </div>
+      <br />
+      <div class="form">
+        <input id="name" type="text" required value="Name" />
+      </div>
+      <br />
+      <div class="form">
+        <input id="email" type="text" required value="Email@xyz.com" />
+      </div>
+      <br />
+      <div class="form">
+        <input id="pass" type="text" required value="Password" />
+      </div>
+      <br /><br />
+      <div class="signin">
+        <button type="submit" onclick="successfull()" aria-required="true">
+          Signin</button
+        ><br /><br />
+        <a href="signup.html" style="color: rgb(0, 250, 250)">
+          Create account
+        </a>
+      </div>
+    </form>
+  </div>
+  <script>
+    {
+      function successfull() {
+        alert("signed in successfully!!!!");
+      }
+    }
+  </script>
+</body>
