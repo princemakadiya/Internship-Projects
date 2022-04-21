@@ -1,0 +1,135 @@
+.container {
+  text-align: center;
+  margin-top: 23px;
+}
+
+table {
+  margin: auto;
+}
+body {
+  background: rgb(162, 152, 228);
+  background: radial-gradient(
+    circle,
+    rgba(162, 152, 228, 1) 0%,
+    rgba(0, 0, 0, 0.8463760504201681) 100%
+  );
+}
+
+input {
+  text-align: right;
+  padding-right: 30px;
+  border-radius: 50px;
+  border: 2px solid #130d0da2;
+  font-size: 30px;
+  height: 50px;
+  width: 320px;
+  margin-bottom: 0px;
+}
+
+button {
+  border-radius: 0px;
+  border-color: black;
+  color: aqua;
+  font-size: 25px;
+  background: #000000de;
+  width: 102px;
+  height: 90px;
+  margin: -3px;
+  padding: 0px;
+}
+button:hover {
+  border-radius: 5px;
+  cursor: grab;
+  color: rgb(30, 255, 0);
+  background-color: rgba(0, 0, 0, 0.616);
+  transition-duration: 0.7s;
+}
+button:active {
+  cursor: grabbing;
+  font-size: 20px;
+  height: 70px;
+  width: 80px;
+  border-radius: 10px;
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  background-color: black;
+  color: gold;
+  transition-duration: 0.1s;
+}
+
+.calculator {
+  border-style: double;
+  border-color: cyan;
+  background: rgb(0, 164, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 164, 255, 0.6166841736694677) 31%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  padding: 23px;
+  border-radius: 33px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Courier New", Courier, monospace;
+}
+.equal {
+  min-width: 10.1rem;
+  border-bottom-right-radius: 15px;
+}
+.equal:active {
+  color: rgb(179, 0, 255);
+  min-width: 5rem;
+}
+.plus {
+  min-height: 8.8rem;
+}
+.plus:active {
+  color: deeppink;
+  min-height: 3.8rem;
+}
+.name {
+  margin-right: 1vw;
+  background: -webkit-linear-gradient(rgb(200, 255, 1), rgb(81, 253, 167));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name:hover {
+  margin-right: 1vw;
+  background: -webkit-linear-gradient(rgb(175, 1, 255), rgb(226, 251, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.clear:active {
+  color: red;
+}
+.op:active {
+  color: deeppink;
+}
+.clear {
+  border-top-left-radius: 15px;
+}
+
+.zero {
+  border-bottom-left-radius: 15px;
+}
+.op1 {
+  border-top-right-radius: 15px;
+}
+.op1:active {
+  color: deeppink;
+}
+.sci {
+  border-radius: 8px;
+  font-size: 17px;
+  height: 30px;
+  width: 110px;
+  margin-bottom: 10px;
+}
+.sci:active {
+  transition-duration: 0.5s;
+  font-size: 80px;
+  height: 150px;
+  width: 600px;
+}
