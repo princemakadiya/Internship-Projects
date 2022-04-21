@@ -1,0 +1,87 @@
+body {
+  background: rgb(0, 185, 255);
+  background: linear-gradient(
+    251deg,
+    rgba(0, 185, 255, 0.8575805322128851) 0%,
+    rgba(1, 0, 5, 1) 28%,
+    rgba(1, 30, 46, 1) 72%,
+    rgba(0, 185, 255, 0.8631827731092436) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 96.5vh;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 21rem;
+  left: 24rem;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 6rem;
+  transition: 300ms;
+  padding: 2rem;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+.selection:active {
+  transform: scale(1);
+}
+.results {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  position: relative;
+  left: 2rem;
+  margin-left: 0.1rem;
+  font-size: 1.9rem;
+  color: rgba(229, 255, 0, 0.986);
+}
+
+.result-selection {
+  opacity: 0.5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 2rem;
+}
+.score1 {
+  position: absolute;
+  top: 15vh;
+  left: 22.4vw;
+}
+.score2 {
+  position: absolute;
+  top: 15vh;
+  left: 71.8vw;
+}
+.you {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.res {
+  font-size: 4rem;
+  position: absolute;
+  top: 11vh;
+  left: 34vw;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.result {
+  transition: 1000ms;
+}
