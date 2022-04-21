@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="selections">
+      <button class="selection" data-selection="rock">✊</button>
+      <button class="selection" data-selection="paper">✋</button>
+      <button class="selection" data-selection="scissors">✌</button>
+    </div>
+    <div class="results">
+      <div>
+        <p style="color: rgb(255, 0, 136)" class="you">You</p>
+        <p class="score1">
+          <span class="result-score" data-your-score>0</span>
+        </p>
+      </div>
+      <div data-final-column>
+        <p style="color: rgb(255, 0, 136)" class="you">Computer</p>
+        <p class="score2">
+          <span class="result-score" data-computer-score>0</span>
+        </p>
+      </div>
+      <div class="res"><p class="result" id="result"></p></div>
+    </div>
+  </body>
+</html>
