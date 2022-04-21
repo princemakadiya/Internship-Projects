@@ -1,0 +1,190 @@
+.box {
+  border-width: 200px;
+  border: height 100px;
+  color: black;
+}
+p.heading {
+  text-align: center;
+  align-content: center;
+  background: rgb(84, 208, 0);
+  background: linear-gradient(
+    133deg,
+    rgba(84, 208, 0, 1) 17%,
+    rgba(245, 255, 0, 1) 78%
+  );
+  font-size: 60px;
+}
+body {
+  transition-duration: 0.5s;
+  background: rgb(0, 179, 208);
+  background: linear-gradient(
+    133deg,
+    rgba(0, 179, 208, 1) 0%,
+    rgba(36, 0, 99, 1) 99%
+  );
+  background-repeat: no-repeat;
+  background-size: 110vw 300vh;
+}
+.box1 {
+  height: 30vh;
+  width: 92.5vw;
+  border-style: double;
+  border-color: black;
+  border-radius: 20px;
+  margin-top: 10vh;
+  margin-left: 3vw;
+  background-color: rgb(0, 0, 0);
+}
+.img1 {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.img2 {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.words {
+  color: rgb(255, 251, 0);
+  position: absolute;
+  right: 0px;
+  top: 44.5vh;
+  left: 33vw;
+  font-size: 40px;
+  font-family: cursive;
+}
+.words2 {
+  color: rgb(255, 251, 0);
+  position: absolute;
+  right: 0px;
+  top: 85vh;
+  left: 33vw;
+  font-size: 40px;
+  font-family: cursive;
+}
+.img3 {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.8;
+}
+.words3 {
+  position: absolute;
+  color: rgb(255, 251, 0);
+  right: 0px;
+  top: 124vh;
+  left: 33vw;
+  font-size: 40px;
+  font-family: cursive;
+}
+.words4 {
+  position: absolute;
+  color: rgb(255, 251, 0);
+  right: 0px;
+  top: 168vh;
+  left: 33vw;
+  font-size: 40px;
+  font-family: cursive;
+}
+.sign {
+  margin-top: 3vh;
+  padding-top: 8px;
+  text-align: center;
+  margin-left: 86vw;
+  width: 180px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgb(5, 10, 0.6);
+}
+.signinbutton:hover {
+  transition-duration: 0.5s;
+  background: rgb(0, 164, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 164, 255, 1) 30%,
+    rgba(0, 0, 0, 0.006039915966386533) 100%
+  );
+}
+.signupbutton:hover {
+  background: rgb(0, 164, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 164, 255, 1) 30%,
+    rgba(0, 0, 0, 0.006039915966386533) 100%
+  );
+}
+.img1:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.img1:active {
+  height: 80%;
+  width: 80%;
+  transition-duration: 0.4s;
+}
+.img2:hover {
+  transition-duration: 0.5s;
+
+  opacity: 1;
+}
+.img2:active {
+  height: 80%;
+  width: 80%;
+  transition-duration: 0.4s;
+}
+.img3:active {
+  height: 80%;
+  width: 80%;
+  transition-duration: 0.4s;
+}
+.img3:hover {
+  transition-duration: 0.5s;
+
+  opacity: 1;
+}
+.sign:hover {
+  transition-duration: 0.5s;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 0.006039915966386533) 100%
+  );
+}
+.box1:hover {
+  transition-duration: 0.5s;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 0.006039915966386533) 100%
+  );
+}
+.contact {
+  position: absolute;
+  text-align: center;
+  padding: 3px;
+  width: 100px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: black;
+  margin-top: 3vh;
+  margin-left: 1vw;
+}
+.contact:hover {
+  transition-duration: 0.5s;
+
+  background: rgb(16, 95, 160);
+}
+.contact:active {
+  transition-duration: 0.5s;
+  font-size: 10px;
+  background: rgba(95, 16, 160, 0.685);
+}
